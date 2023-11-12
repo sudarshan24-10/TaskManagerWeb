@@ -23,14 +23,15 @@ export default function ResetPasswordScreen() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
+    console.log(token);
     if (password !== confirmPassword) {
       toast.error("Passwords do not match");
       return;
     }
     try {
       await axios.post("/api/users/reset-password", {
-        password,
-        token,
+        password: password,
+        token: token,
       });
       navigate("/signin");
       toast.success("password reset successfully");

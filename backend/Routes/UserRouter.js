@@ -64,13 +64,14 @@ UserRouter.post(
 
 UserRouter.post(
   "/reset-password",
-
   expressAsyncHandler(async (req, res) => {
-    jwt.verify(req.body.token, process.env.JWT_SECRET, async (err, decode) => {
+    const token = req.body.token.substring(0, req.body.token.length - 1);
+    jwt.verify(token, process.env.JWT_SECRET, async (err, decode) => {
       if (err) {
         res.status(401).send({ message: "Invalid token" });
       } else {
-        const user = await User.findOne({ resetToken: req.body.token });
+        console.log(token);
+        const user = await User.findOne({ resetToken: token });
         if (user) {
           if (req.body.password) {
             user.password = bcrypt.hashSync(req.body.password, 8);
