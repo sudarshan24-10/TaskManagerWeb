@@ -1,0 +1,481 @@
+.custom-NavbarBrand {
+  padding-left: 3rem;
+}
+
+.custom-signin-link {
+  margin-right: 9rem;
+}
+
+.GetStarted-button {
+  margin-top: 2.5rem;
+  min-height: 2rem;
+  width: 9rem;
+}
+
+.Welcome-text {
+  margin-top: 25.8rem;
+}
+
+.custom-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 8px;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.Signup-screen {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(54, 54, 55, 0.8);
+}
+
+.Signin-screen {
+  max-width: 26rem;
+  margin: 1.4rem auto;
+  padding: 3.1rem;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.6rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.6rem rgba(54, 54, 55, 0.8);
+}
+
+.signup-form {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.3rem;
+}
+
+.signin-form label {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.signin-form input {
+  border: 0.06rem solid #ccc;
+  border-radius: 0.3rem;
+  transition: border-color 0.2s;
+  padding: 4px;
+}
+
+.signup-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signin-form input:focus {
+  border-color: rgb(116, 175, 246);
+  outline: none;
+  box-shadow: 0 0 1.25rem rgba(116, 175, 246);
+}
+
+.signup-form input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s;
+  padding: 4px;
+}
+
+.signup-form input:focus {
+  border-color: rgb(116, 175, 246);
+  outline: none;
+  box-shadow: 0 0 20px rgba(116, 175, 246);
+}
+
+.signup-submit {
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.signup-submit:hover {
+  background-color: #0056b3;
+}
+
+.custom-dashboard {
+  display: flex;
+
+  height: 80vh;
+  width: 90vw;
+}
+
+.sidebar {
+  color: rgba(90, 88, 88, 0.724);
+  width: 15vw;
+  padding: 1.25rem;
+  font-weight: bold;
+  height: 80vh;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 5rem;
+}
+
+.sidebar-item {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-item:hover {
+  color: #0a0a0a;
+}
+
+.sidebar-item .rotate {
+  transform: rotate(180deg);
+}
+
+.sidebar-item-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.List-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.add-category-button {
+  width: 4rem;
+}
+
+.category-carousel {
+  position: fixed;
+  display: flex;
+  border-radius: 3px;
+  z-index: 999;
+  background-color: #f5eeee;
+}
+
+.Font-icon {
+  padding-bottom: 0.7rem;
+}
+
+.list-items {
+  margin-top: 0.5rem;
+}
+
+.list-item {
+  margin-bottom: 1rem;
+  color: rgba(90, 88, 88, 0.724);
+  transition: background-color 0.3s ease;
+}
+
+.list-item:hover {
+  color: #131313;
+}
+
+.custom-dropdown-toggle {
+  background-color: transparent !important;
+  color: #f5eeee !important;
+  border: transparent !important;
+}
+
+.custom-dropdown-menu {
+  background-color: transparent !important;
+}
+
+.custom-dropdown-menu .dropdown-divider {
+  border-top: 1px solid #ccc !important;
+}
+
+.custom-dropdown {
+  margin-right: 5rem !important;
+}
+
+.Task-List {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  margin-right: 3rem;
+  margin-left: 5rem;
+  width: 100rem;
+  height: 40rem;
+  margin-bottom: 6rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 0px 6px rgb(65, 65, 65);
+}
+.nav-task-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.date-time {
+  display: flex;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  max-width: 20rem;
+  padding-right: 1.5rem;
+}
+
+.add-task {
+  margin-left: 4rem;
+  height: 2.5rem !important;
+  margin-top: 0.4rem;
+  border-radius: 20px !important;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-box {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+.search-input {
+  border-radius: 2rem;
+  padding: 0.5rem;
+  border: 1px solid #8b8888;
+  max-width: auto;
+  width: 30rem;
+}
+
+.not-valid-day {
+  color: gray;
+  /* Additional styles for invalid dates can be added here */
+}
+
+.carousel-container {
+  position: absolute; /* Use fixed positioning to cover the entire viewport */
+
+  max-width: auto;
+  max-height: 50rem;
+  width: 40rem;
+  height: auto;
+  max-height: 35rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  z-index: 999; /* Place it above everything else */
+
+  margin-top: 5rem;
+  margin-left: 25rem;
+
+  border: 2px solid #8b8888;
+  box-shadow: 0px 0px 6px rgb(65, 65, 65);
+  border-radius: 10px;
+}
+
+.datePicker {
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 999;
+  width: 16rem; /* Set an appropriate width */
+  height: 18rem;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.view-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.datePicker-header {
+  display: flex;
+  border: 1px solid black;
+  height: 1.7rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.datePicker-header p {
+  flex: 1 0 0;
+  text-align: center;
+  padding-top: 0.85rem;
+}
+
+.datePicker-header ion-icon {
+  cursor: pointer;
+  margin-right: 0.2rem;
+  margin-left: 0.2rem;
+}
+
+.add-task-details .form-control {
+  border: 0.1rem solid black !important;
+}
+
+.show-date {
+  width: 10rem;
+  border: 2px solid #090909;
+  height: 2rem;
+  padding-left: 5px;
+}
+
+.datePicker-body-1 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for days */
+  gap: 7px; /* Adjust the gap between days */
+  padding: 5px; /* Padding for the grid container */
+  background-color: #f5f5f5; /* Background color for the days grid */
+  border-bottom: 1px solid #ccc; /* Border between header and days grid */
+}
+
+.days-row {
+  text-align: center;
+  font-weight: bold;
+  color: #333; /* Text color for the days */
+}
+
+.datePicker-body-2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for dates */
+  gap: 7px; /* Adjust the gap between dates */
+  padding: 5px; /* Padding for the grid container */
+}
+
+.datePicker-body-2 p {
+  text-align: center;
+  padding: 5px;
+  background-color: #fff; /* Background color for the dates */
+  border: 1px solid #ccc; /* Border for each date */
+  cursor: pointer; /* Add cursor pointer for clickable dates */
+}
+
+.datePicker-body-2 p:hover {
+  background-color: #4691f9; /* Background color on hover */
+}
+
+.signin-error {
+  margin-left: 59rem;
+  font-weight: bold;
+  color: red;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.add-task-details {
+  margin-top: 1rem;
+  padding-left: 3rem;
+  padding-right: 4rem;
+}
+
+.category-carousel {
+  position: fixed;
+  z-index: 99;
+}
+
+.add-task-carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-date p {
+  padding-top: 0.2rem;
+}
+
+.Body-taskItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.empty-Taskitems {
+  margin-top: 7rem;
+}
+
+.taskDetails-links {
+  color: #1f83ee;
+  border: none;
+}
+
+.taskDetails-links:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.Task-component {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 70rem;
+  height: 34rem;
+  overflow-y: auto;
+  max-height: 30rem;
+}
+
+.task-item-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  border: 3px solid rgb(237, 237, 237);
+  border-radius: 20px;
+  padding-left: 1rem;
+  background-color: #dad4d4;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.view-close {
+  margin-left: 38.5rem;
+  margin-top: 0.3rem;
+  cursor: pointer;
+}
+
+.task-item {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.task-para {
+  font-weight: bold;
+}
+
+.tag {
+  font-weight: bold;
+}
+.taskDetails-links {
+  border: none;
+  background-color: #dad4d4;
+}
+
+.task-details {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.view-body {
+  width: 40rem;
+  z-index: 999;
+  position: absolute;
+  background-color: #dad4d4;
+  max-height: 35rem;
+  height: auto;
+  margin-left: 25rem;
+  margin-top: 5rem;
+  border-radius: 10px;
+}
