@@ -18,6 +18,7 @@ const emailSending = async () => {
       time.setMinutes(time.getMinutes());
 
       const currentTime = time.toLocaleTimeString("en-US", {
+        timeZone: indianTimezone,
         hour12: false,
         hour: "2-digit",
         minute: "2-digit",
