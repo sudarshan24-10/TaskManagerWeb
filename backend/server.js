@@ -5,15 +5,15 @@ import UserRouter from "./Routes/UserRouter.js";
 import TaskRouter from "./Routes/TaskRouter.js";
 import emailSending from "./BackGroundRunningTasks.js";
 import path from "path";
+import morgan from "morgan";
 dotenv.config();
 
 const app = express();
 
+
+app.use(morgan('dev'));
 mongoose
-  .connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("Connected to MongoDB");
   })
@@ -22,6 +22,9 @@ mongoose
   });
 
 app.use(express.json());
+app.use((req,res,err,next)=>{
+  reconsole.log(req);
+})
 
 emailSending();
 
@@ -30,6 +33,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/users", UserRouter);
 
 app.use("/api/v1", TaskRouter);
+
+
 
 const __dirname = path.resolve();
 

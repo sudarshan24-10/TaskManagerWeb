@@ -58,6 +58,8 @@ UserRouter.post(
         }
       });
       res.send({ message: "we have sent reset link to your email address" });
+    }else{
+      res.status(404).send({ message:"user not found" });
     }
   })
 );

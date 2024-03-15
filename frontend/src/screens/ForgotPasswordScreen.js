@@ -21,13 +21,17 @@ export default function ForgotPassword() {
   }, [navigate, user]);
 
   const submitHandler = async (e) => {
+    
     e.preventDefault();
     try {
+      console.log(email);
       const response = await axios.post("/api/users/forget-password", {
         email,
       });
+      console.log(response.data);
       toast.success(response.data.message);
     } catch (err) {
+      console.log(err.data);
       toast.error(err);
     }
   };
